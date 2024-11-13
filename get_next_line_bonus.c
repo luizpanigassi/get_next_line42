@@ -22,7 +22,7 @@ char	*get_next_line(int fd)
 	if (!ft_strchr(receiver_buffer[fd], '\n'))
 	{
 		receiver_buffer[fd] = ft_read_file(receiver_buffer[fd], fd);
-		if (!receiver_buffer)
+		if (!receiver_buffer[fd)
 		{
 			free(receiver_buffer[fd]);
 			receiver_buffer[fd] = NULL;
